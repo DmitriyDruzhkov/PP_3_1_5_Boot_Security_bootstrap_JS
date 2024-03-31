@@ -12,6 +12,7 @@ import ru.kata.spring.boot_security.demo.reposirory.UserRepository;
 
 import java.util.List;
 
+
 @Service
 @Transactional(readOnly = true)
 public class UserServiceImpl implements UserService, UserDetailsService {
@@ -33,7 +34,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     @Transactional(readOnly = true)
     public User findById(Long id) {
-        return userRepository.getById(id);
+        return userRepository.findById(id).orElse(null);
     }
 
     @Override
