@@ -35,7 +35,9 @@ async function newUser() {
                 })
             }).then(() => {
                 formAddNewUser.reset()
-                window.location.assign("http://localhost:8080/admin");
+                // window.location.assign("http://localhost:8080/admin");
+                $('#home-tab').click();
+                allUsers()
             })
         })
     } catch(e) {
