@@ -9,6 +9,8 @@ async function getUser() {
                     <tr>
                         <td>${user.id}</td>
                         <td>${user.username}</td>
+                        <td>${user.lastname}</td>
+                        <td>${user.age}</td>
                         <td>${user.email}</td>
                         <td>${roles.replace('ROLE_', '') + ' '}</td>
                     </tr>)`;

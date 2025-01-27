@@ -88,6 +88,8 @@
                                             <tr>
                                                 <th scope="col">ID</th>
                                                 <th scope="col">Username</th>
+                                                <th scope="col">Lastname</th>
+                                                <th scope="col">Age</th>
                                                 <th scope="col">Email</th>
                                                 <th scope="col">Role</th>
                                                 <th scope="col">Edit</th>
@@ -119,6 +121,14 @@
                                                     <label for="emailNewUser">Email</label>
                                                     <input type="text" class="form-control" name="email"
                                                            id="emailNewUser" placeholder="Email"/>
+                                                    <br>
+                                                    <label for="lastnameNewUser">Lastname</label>
+                                                    <input type="text" class="form-control" name="lastname"
+                                                           id="lastnameNewUser" placeholder="Lastname"/>
+                                                    <br>
+                                                    <label for="ageNewUser">Age</label>
+                                                    <input type="text" class="form-control" name="age"
+                                                           id="ageNewUser" placeholder="Age"/>
                                                     <br>
                                                     <label for="passwordNewUser">Password</label>
                                                     <input type="text" class="form-control" name="password"
@@ -162,6 +172,8 @@
                                             <tr>
                                                 <th>ID</th>
                                                 <th>Username</th>
+                                                <th>Lastname</th>
+                                                <th>Age</th>
                                                 <th>Email</th>
                                                 <th>Role</th>
                                             </tr>
@@ -199,6 +211,18 @@
                         <label for="usernameUpdate" class="form-label fw-bold">Username</label>
                         <input type="text" class="form-control" name="username"
                                id="usernameUpdate"
+                               minlength="2" maxlength="30" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastnameUpdate" class="form-label fw-bold">Lastname</label>
+                        <input type="text" class="form-control" name="lastname"
+                               id="lastnameUpdate"
+                               minlength="2" maxlength="30" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ageUpdate" class="form-label fw-bold">Age</label>
+                        <input type="text" class="form-control" name="age"
+                               id="ageUpdate"
                                minlength="2" maxlength="30" required/>
                     </div>
                     <div class="mb-3">
@@ -260,6 +284,20 @@
                                class="form-label fw-bold">Username</label>
                         <input type="text" class="form-control" name="username"
                                id="usernameDel" disabled
+                               minlength="2" maxlength="30">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastnameDel"
+                               class="form-label fw-bold">Lastname</label>
+                        <input type="text" class="form-control" name="lastname"
+                               id="lastnameDel" disabled
+                               minlength="2" maxlength="30">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ageDel"
+                               class="form-label fw-bold">Age</label>
+                        <input type="text" class="form-control" name="age"
+                               id="ageDel" disabled
                                minlength="2" maxlength="30">
                     </div>
                     <div class="mb-3">

@@ -29,6 +29,8 @@ async function newUser() {
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     username: formAddNewUser.username.value,
+                    lastname: formAddNewUser.lastname.value,
+                    age: formAddNewUser.age.value,
                     email: formAddNewUser.email.value,
                     password: formAddNewUser.password.value,
                     roles: rolesNewUser

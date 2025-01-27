@@ -29,6 +29,10 @@ public class User implements UserDetails {
     private Long id;
     @Column(name = "username")
     private String username;
+    @Column(name = "lastname")
+    private String lastname;
+    @Column(name = "age")
+    private int age;
     @Column(name = "password")
     private String password;
     @Column(name = "email")
@@ -48,11 +52,13 @@ public class User implements UserDetails {
 
     }
 
-    public User(String username, String email, String password, Set<Role> roles) {
+    public User(String username, String lastname, int age, String email, String password, Set<Role> roles) {
         this.username = username;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.lastname = lastname;
+        this.age = age;
     }
 
     @Override
@@ -123,5 +129,19 @@ public class User implements UserDetails {
         this.roles = roles;
     }
 
+    public String getLastname() {
+        return lastname;
+    }
 
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }

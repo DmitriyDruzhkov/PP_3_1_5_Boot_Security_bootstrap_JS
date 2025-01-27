@@ -16,6 +16,8 @@ async function allUsers() {
                         <tr>
                             <td>${user.id}</td>
                             <td>${user.username}</td>
+                            <td>${user.lastname}</td>
+                            <td>${user.age}</td>
                             <td>${user.email}</td>
                            <!-- <td>${user.password}</td> -->                            
                             <td>${user.roles.map(role => " " + role.name.substring(5))}</td>
@@ -67,6 +69,8 @@ async function viewDeleteModal(id) {
     let formDelete = document.forms["formDeleteUser"];
     formDelete.id.value = userDelete.id;
     formDelete.username.value = userDelete.username;
+    formDelete.lastname.value = userDelete.lastname;
+    formDelete.age.value = userDelete.age;
     formDelete.email.value = userDelete.email;
     formDelete.password.value = userDelete.password;
 
@@ -124,6 +128,8 @@ function editCurrentUser() {
             body: JSON.stringify({
                 id: editForm.id.value,
                 username: editForm.username.value,
+                lastname: editForm.lastname.value,
+                age: editForm.age.value,
                 email: editForm.email.value,
                 password: editForm.password.value,
                 roles: editUserRoles
@@ -151,6 +157,8 @@ async function viewEditModal(id) {
     let form = document.forms["formEditUser"];
     form.id.value = userEdit.id;
     form.username.value = userEdit.username;
+    form.lastname.value = userEdit.lastname;
+    form.age.value = userEdit.age;
     form.email.value = userEdit.email;
 
 
