@@ -104,16 +104,18 @@
                             <!-- UserTable -->
 
                             <!-- NewUser -->
-                            <div id="NewUser" class="card tab-pane">
-                                <div class="card-header font-weight-bold h5">
+
+                            <div id="NewUser" class="card tab-pane" >
+                                <div class="card-header font-weight-bold h5" >
                                     Add new users
                                 </div>
-                                <div class="card-body">
-                                    <div class="row justify-content-center">
-                                        <div class="col-4 justify-content-center">
+                                <div class="card-body" >
+                                    <div class="container d-flex justify-content-center">
+                                    <div class="row justify-content-center" >
+                                        <div class="col-8 d-flex justify-content-center"> <!-- Добавлено: d-flex justify-content-center -->
                                             <form class="form-group text-center font-weight-bold"
-                                                  name="formAddNewUser" id="formAddNewUser">
-                                                <div class="form-group text-center">
+                                                  name="formAddNewUser" id="formAddNewUser" style="width: 100%;"> <!-- Добавлено style -->
+                                                <div class="form-group text-center" >
                                                     <label for="usernameNewUser">Username</label>
                                                     <input type="text" class="form-control" name="username"
                                                            id="usernameNewUser" placeholder="Username"/>
