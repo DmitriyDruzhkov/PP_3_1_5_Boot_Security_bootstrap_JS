@@ -14,7 +14,7 @@ UserService userService;
     }
 
         @GetMapping("/login")
-    public String loginPage() {
+    public String loginPageOpen() {
         return "login";
     }
 }
